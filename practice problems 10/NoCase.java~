@@ -1,0 +1,30 @@
+import hsa.Console;
+
+public class NoCase
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();    
+    
+    String word1; 
+    String word2; 
+    
+    c.print("Enter a word or Enter 'end' to end the program: ");
+    word1 = c.readLine(); 
+    c.print("Enter a word to compare to the first word or Enter 'end' to end the program: "); 
+    word2 = c.readLine(); 
+    
+    while(!word1.equalsIgnoreCase("end") && !word2.equalsIgnoreCase("end"))
+    { 
+      c.println(word1.equalsIgnoreCase(word2)); 
+      
+      c.println("First Word:");
+      firstWord = c.readLine();
+      
+      c.println("Second Word:");
+      secondWord = c.readLine();
+    }
+  }    
+}

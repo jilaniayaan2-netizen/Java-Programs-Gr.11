@@ -1,0 +1,12 @@
+import hsa.Console;
+
+public class LargestSmallestValue 
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    
+  }
+}

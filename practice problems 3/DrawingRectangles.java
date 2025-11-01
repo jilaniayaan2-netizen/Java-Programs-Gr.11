@@ -1,0 +1,16 @@
+import hsa.Console;
+import java.awt.*;
+
+public class DrawingRectangles
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int height = 100; 
+    int width = 100;
+    
+    c.drawRect((c.getWidth()/2 - width/2), (c.getHeight()/2 - height/2), width, height);
+  }
+}

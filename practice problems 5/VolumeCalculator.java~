@@ -1,0 +1,21 @@
+import hsa.Console;
+
+public class VolumeCalculator
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    double width; 
+    double height; 
+    double length; 
+    
+    c.print("Enter wdith: ");
+    width = c.readDouble(); 
+    c.print("Enter height: ");
+    height = c.readDouble(); 
+    c.print("Enter length: ");
+    length = c.readDouble(); 
+  }
+}

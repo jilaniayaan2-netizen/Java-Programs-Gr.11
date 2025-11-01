@@ -1,0 +1,25 @@
+import hsa.Console;
+
+public class MoreRectangleFun
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    double height;
+    double width; 
+    double x; 
+    double y;
+    
+    c.print("Enter height: ");
+    height = c.readDouble(); 
+    c.print("Enter width: ");
+    width = c.readDouble(); 
+    c.print("Enter x value for top left corner: ");
+    x = c.readDouble();
+    c.print("Enter y value for top left corner: ");
+    y = c.readDouble(); 
+    
+  }
+}

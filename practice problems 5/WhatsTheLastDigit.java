@@ -1,0 +1,19 @@
+import hsa.Console;
+
+public class WhatsTheLastDigit
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int userInput;
+    
+    c.print("Enter an int: ");
+    userInput = c.readInt(); 
+    
+    int finalDigit = userInput%10;
+    
+    c.print(finalDigit);
+  }
+}

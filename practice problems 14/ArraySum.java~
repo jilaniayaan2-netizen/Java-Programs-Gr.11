@@ -1,0 +1,26 @@
+import hsa.Console;
+
+public class ArraySum 
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console(); 
+    
+    int[] arrayOfNums = new int[5]{5, 9, 2, 3, 6}; 
+    
+    ArraySum[arrayOfNums];
+  }
+  public static void ArraySum(int[] nums)
+  { 
+    int sum = 0;
+    
+    for(x = 0; x <= nums.length-1; x++)
+    { 
+      sum += nums[x];
+    } 
+    
+    c.println(sum);
+  }
+}

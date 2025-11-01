@@ -1,0 +1,23 @@
+import hsa.Console;
+
+public class WhileLoopPractice
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int a = 1; 
+    int b = 1; 
+    int c = 10; 
+    int d = 18; 
+    int e = 20; 
+    
+    c.print("Part A");
+    while(a <= 10)
+    { 
+      c.println(a);
+      a++; 
+    }
+  }
+}

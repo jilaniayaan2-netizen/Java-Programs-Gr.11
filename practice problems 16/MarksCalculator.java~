@@ -1,0 +1,62 @@
+import hsa.Console;
+
+public class MarksCalculator
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console(); 
+    
+    String markStr;
+    double [] marks; 
+    int storage = 0; 
+    String storageStr; 
+    String check = "";
+    double averageMark = 0; 
+    double totalMarks = 0;
+    double secondHighestMark = 0; 
+    double highestMark = 0; 
+    
+    while(!check.equals("true"))
+    {
+      c.print("Enter how many marks you will enter: "); 
+      storageStr = c.readLine();
+      try
+      { 
+       storage = Integer.parseInt(storageStr);
+       check = "true";
+      }
+      catch(NumberFormatException e)
+      {
+       c.println(storageStr + " is invalid"); 
+       check = "false";
+      }
+    }
+    marks = new double[storage];
+    
+    for(int x = 0; x <= storage-1; ++x)
+    {      
+      c.print("Enter a mark between 1-100: "); 
+      markStr = c.readLine();
+      try
+      {
+        marks[x] = Double.parseDouble(markStr);
+        totalMarks += marks[x];
+        highestMark = Math.max(highestMark, marks[x]);
+        if(marks[x] < 0 || marks[x] > 100)
+        {
+          c.println(markStr + " is invalid, try again");
+          x -= 1;
+        }
+      }
+      catch(NumberFormatException e)
+      {
+        c.println(markStr + " is invalid, try again");
+        x-= 1;
+      }
+    }
+    averageMark = totalMarks/storage;
+    c.println("The average mark is " + averageMark);
+  }
+}    

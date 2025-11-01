@@ -1,0 +1,23 @@
+import hsa.Console;
+
+public class ReceiptPrinter
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    c.print(" ", 10); c.println("SAAD'S CLOTHIER");
+    c.print(" ", 10); c.println("***************"); 
+    c.println(); c.println(); 
+    c.print(" ", 10); c.print("Date:", 10); c.println("September 17"); 
+    c.print(" ", 10); c.print("Name:", 10); c.println("Ayaan Jilani");
+    c.print(" ", 10); c.print("Phone #:", 10); c.println("555-9990");
+    c.println(); c.println(); 
+    c.print("ITEM", 10); c.print("DESC", 16); c.println("$PRICE$");
+    c.println(); 
+    c.print("1", 10); c.print("Tuxedo", 16); c.println("450.00");
+    c.print("2", 10); c.print("Bowtie", 18); c.println("8.99");
+    c.print(" ", 10); c.print("TOTAL", 16); c.print("458.99"); 
+  }
+}

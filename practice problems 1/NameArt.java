@@ -1,0 +1,16 @@
+import hsa.Console;
+
+public class NameArt
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+
+    c.println("   AAA   YY  YY   AAA       AAA      NNNN    NN");
+    c.println("   A A    Y  Y    A A       A A      NN NN   NN");
+    c.println("  AAAAA    YY    AAAAA     AAAAA     NN  NN  NN");
+    c.println(" AA   AA   YY   AA   AA   AA   AA    NN   NN NN");
+    c.println("AA     AA  YY  AA     AA AA     AA   NN    NNNN"); 
+  }
+}

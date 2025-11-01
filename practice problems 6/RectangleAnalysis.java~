@@ -1,0 +1,13 @@
+import hsa.Console;
+
+public class RectangleAnalysis
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    c.print("User Input", 15); c.print("Option"); 
+    
+  }
+}

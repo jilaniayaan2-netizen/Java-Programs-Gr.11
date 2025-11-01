@@ -1,0 +1,19 @@
+import hsa.Console;
+
+public class LargestandSmallest
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();   
+    
+    int[] nums = new int[]; 
+    int averageNum = 0; 
+    int biggestNum = 0; 
+    int smallestNum = 0; 
+    
+    c.print("Enter a number to the array or enter a negative number to stop adding numbers: ");
+    nums += c.readLine();
+  }    
+}

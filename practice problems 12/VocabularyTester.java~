@@ -1,0 +1,14 @@
+import hsa.Console;
+
+public class VocabularyTester 
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();  
+    
+    BufferedReader input = new BufferedReader(new FileReader("..\\textFiles\\capital.txt")); 
+    PrintWritrer output = new PrintWritrer(new FileWriter("..\\textFiles\\capital.txt")); 
+  }    
+}

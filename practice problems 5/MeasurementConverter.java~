@@ -1,0 +1,20 @@
+import hsa.Console;
+
+public class MeasurementConverter
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    double CM_TO_IN = 2.54; 
+    double lengthOfDeskIn; 
+    
+    c.print("Enter the length of the desk in inches: ");
+    lengthOfDeskIn = c.readDouble(); 
+    
+    lengthOfDeskCm = lengthOfDeskIn*CM_TO_IN;
+    
+    c.print("the length of your desk in centimeters is "); c.print(lengthOfDeskCm, 2, 2);
+  }
+}

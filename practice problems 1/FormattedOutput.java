@@ -1,0 +1,16 @@
+import hsa.Console;
+
+public class FormattedOutput
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    c.println("Hello", 8);
+    c.println("5.66", 3); 
+    c.println(2.0/3.0, 4, 3);
+    c.print("Grade",7); 
+    c.print(87.5, 4, 1);
+  }
+}

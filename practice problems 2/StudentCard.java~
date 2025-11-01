@@ -1,0 +1,14 @@
+import hsa.Console;
+
+public class StudentCard
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+
+    c.drawRect(100, 100, 200, 100);
+    c.setCursor(100, 100);
+    c.print("HELLO");
+  }
+}

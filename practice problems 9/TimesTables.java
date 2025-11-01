@@ -1,0 +1,38 @@
+import hsa.Console;
+
+public class TimesTables
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int startValue; 
+    c.print("Enter a starting value for the timetable: "); 
+    startValue = c.readInt(); 
+    
+    int endValue;
+    c.print("Enter a ending value for the timetable: "); 
+    endValue = c.readInt(); 
+    
+    int product;
+    
+    c.print(" ", 4);
+    for(int x = startValue; x <= endValue; ++x)
+    { 
+      c.print(x + ":", 4);
+    }
+    
+    for(int i = startValue; i <= endValue; ++i)
+    { 
+      c.println(); 
+      c.print(i + ":");
+      for(int p = 1; p <= endValue; ++p)
+      { 
+        product = i*p; 
+        c.print(product, 4); 
+      } 
+      c.println();
+    }
+  }
+}

@@ -1,0 +1,23 @@
+import hsa.Console;
+
+public class TriangleArt
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int userAmount; 
+    c.print("Input the number of *'s in the first row of the triangle: ");
+    userAmount = c.readInt();
+    
+    for(int i = userAmount; rows >= 0; --rows)
+    { 
+      for(int i = 0; i <= rows; ++i)
+      { 
+        c.print("*");
+      }
+      c.println();
+    }
+  }
+}

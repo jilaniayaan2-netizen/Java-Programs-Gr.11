@@ -1,0 +1,32 @@
+import hsa.Console;
+
+public class LastLocation
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();    
+    
+    String userString; 
+    String userStringInString; 
+    int indexNum;
+    
+    c.print("Enter a word or sentence: "); 
+    userString = c.readLine(); 
+    c.print("Enter a string that exists in the word or sentence that you entered: "); 
+    userStringInString = c.readLine();
+    c.print("Enter a index number from where to start searching: "); 
+    indexNum = c.readInt();
+    
+    if(userString.contains(userStringInString))
+    { 
+      
+    }
+    else 
+    { 
+      c.print("No such string exists");
+    }
+    
+  }    
+}

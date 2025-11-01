@@ -1,0 +1,17 @@
+import hsa.Console;
+import java.io.*;
+
+public class ZynahQuestion
+{
+  static Console c;
+ 
+  public static void main (String[] args) throws IOException
+  {
+    c = new Console(); 
+    String text; 
+    int lineCount = 0; 
+    BufferedReader ballalInput = new BufferedReader(new FileReader("..\\textFiles\\inputBallal.txt")); 
+    PrintWriter ballalOutput = new PrintWriter(new FileWriter("..\\textFiles\\outputBallal.txt"));
+    
+  }    
+}

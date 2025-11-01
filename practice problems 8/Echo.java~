@@ -1,0 +1,24 @@
+import hsa.Console;
+
+public class Echo
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int amountOfNum = 0;
+    int y = 60;
+    
+    while(amountOfNum <= 5)
+    { 
+      String i; 
+      c.print("Enter a number: "); 
+      i = c.readString(); 
+      
+      c.drawString(i, 1, (c.getHeight() - (y-=10)));
+      
+      amountOfNum++;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+import hsa.Console;
+
+public class NumberSum 
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();
+    
+    int number; 
+    c.print("Enter a number: ");
+    number = c.readInt();
+  }
+  public static void sumOfInt(int x)
+  {
+    int sum = (num%10) + (num%20)
+  }
+}

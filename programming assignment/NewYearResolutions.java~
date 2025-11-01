@@ -1,0 +1,29 @@
+// NewYearResolutions
+// Created by Ayaan Jilani 
+// Last modified 12/16/2024
+// The program allows the user to input the number of guests coming to the New Year's Eve party and get the resolutions 
+// of all the guests.
+import hsa.Console;
+
+public class NewYearResolutions
+{
+  static Console c; 
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();      // Creates the console 
+    String numOfGuests;     // This will be used to make sure the user entered a integer
+    int numberOfGuests;     // Stores how many guests are coming to the party 
+    String check = "false"; // Will be used to validate our data
+    
+    //Get Input from user
+    c.print("Enter the number of guests coming to the party(10-20): "); 
+    numberOfGuests = c.readInt(); 
+    
+    while(check.equals("false"))
+    {
+      
+    }
+    
+  }//niam 
+}//snoituloseRreaYweN

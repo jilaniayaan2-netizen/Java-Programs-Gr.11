@@ -1,0 +1,19 @@
+import hsa.Console;
+
+public class Calculator
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    double num1; 
+    double num2; 
+    
+    c.print("Enter a number: ");
+    num1 = c.readDouble(); 
+    c.print("Enter a second number: ");
+    num2 = c.readDouble(); 
+    
+  }
+}

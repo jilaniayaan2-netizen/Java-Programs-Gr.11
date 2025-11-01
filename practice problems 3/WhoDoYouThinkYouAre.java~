@@ -1,0 +1,16 @@
+import hsa.Console;
+
+public class WhoDoYouThinkYouAre
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    String fullName = "Ayaan Jilani"; 
+    int xValue = 100;
+    int yValue = 100; 
+    
+    c.drawString(xValue, yValue, fullName);
+  }
+}

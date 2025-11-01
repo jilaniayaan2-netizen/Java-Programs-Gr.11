@@ -1,0 +1,35 @@
+import hsa.Console;
+
+public class TheIrritableMagic8Ball
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    String question;
+    String generatedAnswer = " ";
+    double randomNum = Math.random()*1.0;
+    
+    c.print("How do you feel today? Enter Happy, Angry, or Sad: ");
+    question = c.readString(); 
+    
+    if(0.0 < randomNum && randomNum <= 0.33)
+    { 
+      generatedAnswer = "yes";
+    }
+    else if(0.34 < randomNum && randomNum <= 0.66)
+    {
+      generatedAnswer = "no";
+    }
+    else if(0.67 < randomNum && randomNum <= 1.0)
+    {
+      generatedAnswer = "maybe";
+    }
+    
+    if(question.equals("Happy") && generatedAnswer.equals("yes"))
+    {
+      c.print("Have a nice day!");
+    }
+  }
+}

@@ -1,0 +1,50 @@
+import hsa.Console;
+
+public class MarkAnalyzer
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();   
+    
+    int[] marks = new int[]{70, 55, 80, 92, 10}; 
+    String continueOrNot; 
+    int markToReplace;
+    int replacementMark;
+    int maxMark = 0; 
+    int minMark = 0;
+    int currentMark = 0; 
+    
+    //a
+    c.print("Would you like to replace any of the marks? If so enter 'true' or 'false': "); 
+    continueOrNot = c.readString(); 
+    
+    while(continueOrNot.equals("true"))
+    { 
+      c.print("Enter index of mark you want to replace: "); 
+      markToReplace = c.readInt(); 
+      c.print("Enter the replacement mark: "); 
+      replacementMark = c.readInt(); 
+      
+      
+    }
+    
+    //b 
+    c.println(marks[3]);
+    
+    //c 
+    for(int x = 0; x <= marks.length-1; ++x)
+    { 
+      currentMark = marks[x];
+      maxMark = Math.max(maxMark, currentMark);  
+      if(minMark == 0)
+      { 
+        minMark = currentMark;
+      }  
+      minMark = Math.min(minMark, currentMark);
+    }
+    c.println("The smallest mark is " + minMark); 
+    c.println("The largest mark is " + maxMark);
+  }    
+}

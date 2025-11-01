@@ -1,0 +1,25 @@
+import hsa.Console;
+import java.io.*; 
+
+public class ReadToMe
+{
+  static Console c;
+ 
+  public static void main (String[] args) throws IOException 
+  {
+    c = new Console();              
+    
+    String line;
+    String output = "";
+    BufferedReader input = new BufferedReader(new FileReader("..\\text files\\nurseyRhyme.txt")); 
+    
+    while(line != null)
+    { 
+      line = input.readLine();
+      output = output.concat(line);
+    }
+    
+    c.print(output);
+    
+  }    
+}

@@ -1,0 +1,71 @@
+import hsa.Console;
+
+public class ArrayFun
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console(); 
+    
+    int size; 
+    int minRange; 
+    int maxRange; 
+    
+    c.print("Enter the size of the array: "); 
+    size = c.readInt(); 
+    c.print("Enter the low end of the array: "); 
+    minRange = c.readInt(); 
+    c.print("Enter the high end of the array: "); 
+    maxRange = c.readInt();
+    
+    
+  }
+  public static int [] randomArray (int arraySize, int lowRange, int highRange)
+  { 
+    int[] randomNums = new int[arraySize];
+    int randomNumber = 0; 
+    for(int x = 0; x <= randomNums.length-1; ++x)
+    { 
+      randomNumber = (int)(Math.random()*lowRange + highRange);
+      randomNums[x] = randomNumber;
+    }
+    return randomNums;
+  }
+  public static int arraySum (int inputArray [])
+  {
+    int sum = 0; 
+    for(int x = 0; x <= inputArray.length-1; ++x)
+    { 
+      sum += inputArray[x];
+    }
+    return sum; 
+  }
+  public static int maxValue (int inputArray [])
+  {
+    int maxNum = 0; 
+    for(int x = 0; x <= inputArray.length-1; ++x)
+    {
+      maxNum = Math.max(maxNum, inputArray[x]); 
+    }
+    return maxNum;
+  }
+  public static int minValue (int inputArray [])
+  {
+    int minNum = 0; 
+    for(int x = 0; x <= inputArray.length-1; ++x)
+    {
+      if(minNum == 0)
+      {
+        minNum = inputArray[x];
+      }
+      minNum = Math.max(minNum, inputArray[x]); 
+    }
+    return minNum;
+  }
+  public static int arrayRange (int inputArray [])
+  {
+    int averageNum = 0; 
+    return averageNum;
+  }
+}

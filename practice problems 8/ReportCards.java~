@@ -1,0 +1,34 @@
+import hsa.Console;
+
+public class ReportCards
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int numberOfStudents;
+    int totalGoodGrades = 0; 
+    double percentOfStudentsPassing = 0;
+    int goodStudents = 0; 
+    
+    c.print("Enter how many students are in your class: ");
+    numberOfStudents = c.readInt(); 
+    
+    for(int i = 1; i <= numberOfStudents; i++)
+    {
+      int grades; 
+      c.print("Enter one grade: ");
+      grades = c.readInt(); 
+      
+      if(grades >= 50)
+      { 
+        totalGoodGrades += grades;
+        goodStudents++; 
+      }
+    }
+    
+    percentOfStudentsPassing = (totalGoodGrades/goodStudents); 
+    c.print("The percentage of people passing is "); c.print(percentOfStudentsPassing, 2, 1); c.print("%.");
+  }
+}

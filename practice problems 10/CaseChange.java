@@ -1,0 +1,36 @@
+import hsa.Console;
+
+public class CaseChange
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();
+    
+    String continueOrNot = "True"; 
+    String lowerOrUpper; 
+    String userInput; 
+    
+    while(continueOrNot.equals("True"))
+    { 
+      c.print("Enter a word or sentence: "); 
+      userInput = c.readLine(); 
+    
+      c.print("Would you want to change it to uppercase or lowercase? Enter 'Uppercase' or 'Lowercase': ");
+      lowerOrUpper = c.readLine();
+      
+      if(lowerOrUpper.equals("Uppercase"))
+      { 
+        c.println(userInput.toUpperCase());
+      }
+      else
+      { 
+        c.println(userInput.toLowerCase());
+      }
+  
+      c.print("Would you like to continue? Enter 'True' or 'False': "); 
+      continueOrNot = c.readString();
+    }
+  }    
+}

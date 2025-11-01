@@ -1,0 +1,15 @@
+import hsa.Console;
+
+public class WhatIsNDaddy
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int number1; 
+    
+    c.print("Enter a int between 1 and 10: ");
+    number1 = c.readInt(); 
+  }
+}

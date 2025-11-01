@@ -1,0 +1,29 @@
+// Hypotenuse 
+// Created by Ayaan Jilani 
+// Last Modified 10/1/24 
+// Caculates the hypotenuse when the user provides the base and height of the triangle
+import hsa.Console;
+
+public class Hypotenuse
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console(); // The output console
+    
+    double base;       // The base of the triangle
+    double height;     // The height of the triangle 
+    
+    //get user input 
+    c.print("Enter base: "); 
+    base = c.readDouble();
+    c.print("Enter height: "); 
+    height = c.readDouble();
+    
+    // Caculate the hypotenuse
+    double hypotenuse = Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2)); 
+    
+    // Output the hypotenuse 
+    c.print("The hypotenuse of your triangle "); c.print(hypotenuse, 2, 1);
+  }
+}

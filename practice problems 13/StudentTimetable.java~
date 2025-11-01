@@ -1,0 +1,15 @@
+import hsa.Console;
+
+public class StudentTimetable
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();  
+    
+    String[] timetable = new String[]{"World History", "Physics", "Lunch", "Functions", "Computer Science"}; 
+    
+    c.print(timetable);
+  }    
+}

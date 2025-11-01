@@ -1,0 +1,25 @@
+import hsa.Console;
+
+public class TheAmazingSentenceMachine2
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();   
+    
+    String userInput; 
+    String outputString = " ";
+    c.print("Enter a word or sentence: "); 
+    userInput = c.readLine(); 
+    
+    for(int i = 0; i <= (userInput.length()-1); ++i)
+    { 
+      if(i%2 > 0)
+      { 
+        outputString += userInput.charAt(i);
+      }
+    } 
+    c.print(outputString);
+  }    
+}

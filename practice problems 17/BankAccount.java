@@ -1,0 +1,70 @@
+// The BankAccount class
+// Created by Ayaan Jilani 
+// last modified 1/8/2025 
+// creates a bank account with a name and account holder that can deposited to and withdrawn from  
+public class BankAccount 
+{ 
+  // Attributes 
+  private String accountName;   // stores the name of the bank account 
+  private String accountHolder; // stores the name of the account owner 
+  private double balance;       // stores the bank account's balance  
+  
+  // Constructor creates a bank with money in it 
+  // name stores the name of the bank account 
+  // holder stores the name of the bank account's owner 
+  // amount stores the amount of money in the account
+  public BankAccount(String name, String holder, double amount)
+  {
+    accountName = name; 
+    accountHolder = holder; 
+    balance = amount; 
+  }
+  // Constructer creates a bank account with no money in it 
+  // name stores name of the bank account 
+  // holder stores the name of the bank account's holder 
+  public BankAccount(String name, String holder)
+  {
+    accountName = name; 
+    accountHolder = holder; 
+    balance = 0;
+  }
+  // Changes name of the bank account
+  // name stores the name of the bank account 
+  public void nameChange(String name)
+  {
+    accountName = name;
+  }
+  // Returns balance of the bank account 
+  public double getBalance() 
+  {
+    return balance; 
+  }
+  public void changeHolder(String holder)
+  {
+    accountHolder = holder;
+  }
+  public String getHolder()
+  {
+    return accountHolder; 
+  }
+  public String getAccountName()
+  {
+    return accountName; 
+  }
+  public void deposit(double money)
+  {
+    balance += money; 
+  }
+  public boolean withdrawal(double money)
+  { 
+    if(money <= balance)
+    {
+      balance -= money; 
+      return true; 
+    }
+    else 
+    {
+      return false; 
+    }
+  }
+}// BankAccount class

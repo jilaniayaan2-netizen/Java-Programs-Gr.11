@@ -1,0 +1,15 @@
+import hsa.Console;
+
+public class ForLoopPractice
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    for(int i = 1; i <= 10; i++)
+    { 
+      c.println(i);
+    }
+  }
+}

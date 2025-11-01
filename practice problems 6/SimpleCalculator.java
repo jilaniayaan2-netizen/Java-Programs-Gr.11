@@ -1,0 +1,45 @@
+import hsa.Console;
+
+public class SimpleCalculator
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    double num1;
+    double num2; 
+    String operator;
+    double answer;
+    
+    c.print("Enter a number: ");
+    num1 = c.readDouble(); 
+    c.print("Enter a second number: "); 
+    num2 = c.readDouble();
+    c.print("What operation do you want to do? Enter +,*,-,/: "); 
+    operator = c.readString();
+    
+    switch(operator)
+    { 
+      case "+": 
+        answer = num1 + num2; 
+        c.print(answer);
+        break; 
+      case "*":
+        answer = num1 * num2;
+        c.print(answer);
+        break;
+      case "-":
+        answer = num1 - num2;
+        c.print(answer);
+        break; 
+      case "/": 
+        answer = num1 / num2;
+        c.print(answer);
+        break; 
+      default:
+        c.print("Invalid operator");
+        break;
+    } 
+  }
+}

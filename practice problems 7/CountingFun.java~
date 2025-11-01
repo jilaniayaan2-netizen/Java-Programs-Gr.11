@@ -1,0 +1,45 @@
+import hsa.Console;
+
+public class CountingFun
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int x; 
+    int y; 
+    
+    c.print("Enter a num: ");
+    c.print("Enter another num: ");
+    
+    x = c.readInt();
+    y = c.readInt(); 
+    
+    for(int i = x; i <= y; i++)
+    { 
+      c.println(i);
+    }
+
+    for(int i = 1; i <= 10; i++)
+    { 
+      c.println(i);
+    }
+
+    for(int i = x; i <= y; i++)
+    { 
+      c.println(++i);
+    }
+
+    for(int i = 18; i >= 12; i--)
+    { 
+      c.println(i);
+      c.println();
+    }
+
+    for(int i = 20; i <= 30; i++)
+    { 
+      c.print(i + " ");
+    }
+  }
+}

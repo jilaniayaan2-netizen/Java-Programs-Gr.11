@@ -1,0 +1,12 @@
+import hsa.Console;
+
+public class Template
+{
+  static WarehouseInventory c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    
+  }
+}

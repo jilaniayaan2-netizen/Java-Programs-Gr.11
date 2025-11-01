@@ -1,0 +1,13 @@
+import hsa.Console;
+
+public class YoureHowOld
+{
+  static Console c;
+ 
+  public static void main (String[] args) {
+    c = new Console();
+    
+    int CURRENT_YEAR =  2024; 
+    int birthYear;
+  }
+}

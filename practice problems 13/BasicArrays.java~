@@ -1,0 +1,18 @@
+import hsa.Console;
+
+public class BasicArrays
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();  
+    
+    //a
+    int[] numOfVotes = new int[5];
+    //b
+    bool[] answers = new bool[20];
+    //c
+    
+  }    
+}

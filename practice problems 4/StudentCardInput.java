@@ -1,0 +1,42 @@
+import hsa.Console;
+
+public class StudentCardInput
+{
+  static Console c;
+  public static void main(String[] args)
+  {
+    c = new Console();
+   
+    String lastName;
+    String firstName;
+    String studentNumber;
+    String homeForm;
+    String grade;
+    String schoolName;
+   
+    c.print("Enter your last name: ");
+    lastName = c.readString();
+    c.print("Enter your first name: ");
+    firstName = c.readString();
+    c.print("Enter your student number: ");
+    studentNumber = c.readString();
+    c.print("Enter your home room number: ");
+    homeForm = c.readString();
+    c.print("Enter what grade you are in: ");
+    grade = c.readString();
+    c.print("Enter the name of your school: ");
+    schoolName = c.readLine();
+    c.clear(); 
+    
+    c.drawRect(100, 100, 300, 150);
+    c.drawOval(125, 150, 50, 50);
+    c.drawLine(125, 175, 175, 175);
+    c.drawLine(150, 150, 150, 200);
+    
+    c.drawString(schoolName, 225, 125);
+    c.drawString("Name:", 200, 150); c.drawString((firstName + " " + lastName), 325, 150); 
+    c.drawString("Student Number:", 200, 175); c.drawString(studentNumber, 325, 175); 
+    c.drawString("Homeroom Number:", 200, 200); c.drawString(homeForm, 325, 200);
+    c.drawString("Grade:", 200, 225); c.drawString(grade, 325, 225);
+  }
+}

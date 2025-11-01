@@ -1,0 +1,13 @@
+import hsa.Console;
+
+public class MirrorMirrorOnTheWall
+{
+  static Console c;
+ 
+  public static void main (String[] args) 
+  {
+    c = new Console();           
+    
+    
+  }    
+}
